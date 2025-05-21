@@ -1,0 +1,74 @@
+
+/* Generic Boxes */
+.mac-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .mac-item {
+    flex-grow: 1;
+    padding: 1.5rem;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .mac-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .mac-item p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .mac-item ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mac-item li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .mac-item li:before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+  }
+  
+  .mac-section-highlight {
+    background-color: #e8f4f8;
+  }
+
+  .mac-section-highlight h3 {
+    color: #2980b9;
+  }
+
+  .mac-item-highlight {
+    background-color: white;
+  }
+
+  .contact-cta {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+  }
+
+
+  
+
+  @media (max-width: 1024px) {
+    .mac-flex {
+      flex-direction: column;
+    }
+  }

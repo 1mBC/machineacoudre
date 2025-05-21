@@ -1,0 +1,69 @@
+.contact-container{
+display: flex;
+flex-direction: row;
+gap: 2rem;
+}
+
+.contact-infos {
+display: flex;
+flex: 1;
+gap: 2rem;
+background-color: var(--light-gray);
+border-radius: 8px;
+padding: 2vw;
+}
+
+.contact-horaires {
+margin-top: 2rem;
+padding-top: 1rem;
+border-top: 1px solid var(--border-color);
+}
+
+.contact-form {
+flex: 2;
+padding: 2vw;
+background-color: var(--light-gray);
+border-radius: 8px;
+}
+
+
+
+.form-group {
+margin-bottom: 1.5rem;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 0.5rem;
+color: var(--primary-color);
+font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+padding: 0.8rem;
+border: 1px solid var(--border-color);
+border-radius: 4px;
+font-size: 1rem;
+}
+
+.form-group textarea {
+resize: vertical;
+min-height: 120px;
+}
+
+
+/* Responsive design */
+@media (max-width: 1024px) {
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+}
