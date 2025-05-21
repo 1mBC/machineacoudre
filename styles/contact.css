@@ -13,6 +13,10 @@ border-radius: 8px;
 padding: 2vw;
 }
 
+.contact-infos h3 {
+  color: var(--accent-color);
+}
+
 .contact-horaires {
 margin-top: 2rem;
 padding-top: 1rem;
@@ -26,10 +30,14 @@ background-color: var(--light-gray);
 border-radius: 8px;
 }
 
-
+.contact-form h3 {
+  color: var(--accent-color);
+}
 
 .form-group {
 margin-bottom: 1.5rem;
+margin-top: 1.5rem;
+
 }
 
 .form-group label {
@@ -54,10 +62,13 @@ resize: vertical;
 min-height: 120px;
 }
 
+.contact-form button[type="submit"] {
+  border: none;
+  outline: none;
+}
 
 /* Responsive design */
 @media (max-width: 1024px) {
-
     .contact-container {
         flex-direction: column;
     }

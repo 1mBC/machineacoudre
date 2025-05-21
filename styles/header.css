@@ -1,48 +1,51 @@
-
 /* Header */
 header {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
-  }
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
   
-  header h1 {
+header h1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
+    color: var(--accent-color);
+    font-weight: 600;
+}
   
-  nav ul {
+nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
     gap: 1rem;
-  }
+}
   
-  nav a {
-    color: var(--white);
+nav a {
+    color: var(--text-color);
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
     border-radius: 4px;
-  }
+    font-weight: 500;
+}
   
-  nav a:hover {
+nav a:hover {
     color: var(--accent-color);
-    background-color: rgba(255, 255, 255, 0.1);
-  }
+    background-color: var(--primary-color);
+    color: var(--white);
+}
   
-  nav a.active {
-    color: var(--accent-color);
-    background-color: rgba(255, 255, 255, 0.1);
-    font-weight: bold;
-  }
+nav a.active {
+    color: var(--white);
+    background-color: var(--primary-color);
+    font-weight: 500;
+}
 
-  
 /* Responsive design */
 @media (max-width: 1024px) {
     header h1 {
