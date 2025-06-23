@@ -31,8 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contenu_email .= "Message:\n$message\n";
 
     // Entêtes de l'email
-    $headers = "From: $nom <$email>";
-
+    $headers = "From: contact@machineacoudre-med.com\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion();
+    
     // Envoi de l'email
     if (mail($destinataire, $sujet_email, $contenu_email, $headers)) {
         // Redirection vers une page de succès (à créer)
