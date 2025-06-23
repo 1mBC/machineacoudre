@@ -14,7 +14,7 @@ padding: 2vw;
 }
 
 .contact-infos h3 {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .contact-horaires {
@@ -36,7 +36,7 @@ border-radius: 8px;
 
 .form-group {
 margin-bottom: 1.5rem;
-margin-top: 1.5rem;
+
 
 }
 
