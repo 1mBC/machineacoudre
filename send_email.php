@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Adresse de destination
-    $destinataire = "bastien.caujolle@gmail.com";
+    $destinataire = "machineacoudre.med@gmail.com";
 
     // Sujet de l'email
     $sujet_email = $sujet_form;
