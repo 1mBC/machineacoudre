@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contenu_email .= "Message:\n$message\n";
 
     // Entêtes de l'email
-    $headers = "From: \"$nom\" <contact@machineacoudre-med.com>\r\n";
+    $headers = "From: \"$nom\" <$email>\r\n";
     $headers .= "Reply-To: \"$nom\" <$email>\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
     
